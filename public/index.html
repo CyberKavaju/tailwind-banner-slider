@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href="output.css" rel="stylesheet">
+</head>
+
+<body >
+
+    <!-- Swiper -->
+    <section id="hero">
+        <div class="h-1/2 w-2/3 mx-auto">
+            <div class="relative h-full">        
+                <div class="swiper mySwiper h-full w-full">
+                    <div class="swiper-wrapper text-center text-xl bg-gray-200 flex justify-center items-center">
+                        <div class="swiper-slide">
+                            <img src="img/banner1.jpg" alt="Banner 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner2.jpg" alt="Banner 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner3.jpg" alt="Banner 3" class="w-full h-full object-cover">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner4.jpg" alt="Banner 4" class="w-full h-full object-cover">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/banner5.jpg" alt="Banner 5" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
